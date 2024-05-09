@@ -1,31 +1,31 @@
 body {
-    display: flex; /* Make the body a flex container */
-    flex-direction: column;
-    min-height: 100vh; /* Set minimum height for full viewport */
-    margin: 0; /* Remove default margin */
-    font-family: sans-serif; /* Set a basic font */
-    background-color: #fcfcfd;
-  }
-  
-  .App { /* Wrap content with a class for styling */
-    flex: 1; /* Allow content to fill remaining space */
-    display: flex;
-    flex-direction: column;
-    background-color: #fcfcfd;
-  }
-  
-  /*header, footer */
-    /* Styles for header and footer */
-   /* padding: 1rem;
-    /*background-color: #f0f0f0; background color */
-  
-  
- /* header 
-    /* Additional styles for header  */
-    /*justify-content: space-between; Align header content */
-  
-  
-  /*footer */
-    /* Additional styles for footer */
-   /* align-self: flex-end; Push footer to bottom */
-  
+  display: flex; /* Make the body a flex container */
+  flex-direction: column;
+  min-height: 100vh; /* Set minimum height for full viewport */
+  margin: 0; /* Remove default margin */
+  font-family: sans-serif; /* Set a basic font */
+  background-color: #fcfcfd;
+}
+
+.App { /* Wrap content with a class for styling */
+  flex: 1; /* Allow content to fill remaining space */
+  display: flex;
+  flex-direction: column;
+  background-color: #fcfcfd;
+}
+
+header, footer{
+  /* Styles for header and footer */
+  padding: 1rem;
+  background-color: #f0f0f0; /*background color */
+}
+
+header {
+  /* Additional styles for header  */
+  justify-content: space-between; /* Align header content */
+}
+
+footer {
+  /* Additional styles for footer */
+  align-self: flex-end; /* Push footer to bottom */
+}

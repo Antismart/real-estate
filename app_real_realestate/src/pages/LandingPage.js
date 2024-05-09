@@ -1,12 +1,20 @@
 import React from 'react'
 
-function LandingPage() {
-  return (
-    <>
-    <h1>Welcome to our Donation Platform!</h1>
-    <p>Help us connect donors with victims and property owners in need.</p>
-    </>
-  );
+const LandingPage =()=>{
+    const handleButtonClick = (userType) =>{
+        console.log(`User selected: ${userType}`);
+    };
+    return (
+        <div className="landing-page">
+            <h1>Donation Platform</h1>
+            <p>Welcome! Let us know how you can contribute.</p>
+        <div className="button-container">
+            <button onClick={() => handleButtonClick('Donor')}>Donor</button> <br/>
+            <button onClick={() => handleButtonClick('Victim')}>Victim</button><br/>
+            <button onClick={() => handleButtonClick('Property Owner')}>Property Owner</button>
+        </div>
+       </div>
+    );
 };
 
-export default LandingPage
+export default LandingPage;
