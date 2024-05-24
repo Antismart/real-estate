@@ -1,19 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-const LandingPage =()=>{
-    const handleButtonClick = (userType) =>{
-        console.log(`User selected: ${userType}`);
-    };
+const LandingPage = () => {
     return (
-        <div className="landing-page">
-            <h1>Donation Platform</h1>
-            <p>Welcome! Let us know how you can contribute.</p>
-        <div className="button-container">
-            <button onClick={() => handleButtonClick('Donor')}>Donor</button> <br/>
-            <button onClick={() => handleButtonClick('Victim')}>Victim</button><br/>
-            <button onClick={() => handleButtonClick('Property Owner')}>Property Owner</button>
+        <div className="landing-page-container">
+            <div className="landing-page-content">
+                <h1 className="landing-page-title">Welcome to Donations Platform</h1>
+                <p className="landing-page-description">Together, we can make a difference!</p>
+            </div>
         </div>
-       </div>
     );
 };
 

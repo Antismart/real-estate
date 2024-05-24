@@ -29,3 +29,31 @@ footer {
   /* Additional styles for footer */
   align-self: flex-end; /* Push footer to bottom */
 }
+
+.landing-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, #4e54c8, #8f94fb); /* Gradient background */
+}
+
+.landing-page-content {
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Box shadow for depth */
+}
+
+.landing-page-title {
+  font-size: 3rem;
+  color: #333; /* Dark grey text color */
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow for depth */
+}
+
+.landing-page-description {
+  font-size: 1.5rem;
+  color: #555; /* Medium grey text color */
+}
